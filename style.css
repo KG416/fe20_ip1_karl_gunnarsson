@@ -1,0 +1,8 @@
+/* Felmeddelande då 
+man försöker submitta formuläret 
+utan att skriva något
+användarnamn)  */
+#message {
+    color: red;
+    font-weight: bold;
+}
