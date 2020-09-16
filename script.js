@@ -8,7 +8,7 @@ var message = document.getElementById("message");
 form.onsubmit = function () {
 
     if (form.username.value == "") {
-        message.innerHTML = "Please enter a username before you submit";
+        message.innerHTML = "Please enter a name before you submit";
         return false;
     } else {
         message.innerHTML = "";

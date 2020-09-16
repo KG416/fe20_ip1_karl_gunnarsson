@@ -2,10 +2,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- ÄNDRA META DESCRIPTION NÄR DU 
-        VET VAD SIDAN SKA HANDLA OM -->
-    <meta name="description" content="My first individual assignment at kyh">
-    <title>IP1 Karl Gunnarsson</title>
+    <meta name="description"
+        content="The official website of Lagos Golf Course, a golf course on the Nigerian south coast">
+    <title>Lagos Golf Course</title>
 
     <!-- Länk till CSS-fil -->
     <link rel="stylesheet" href="style.css">
@@ -14,58 +13,68 @@
 
 <body>
 
-    <!-- FORMULÄR START -->
+    <!-- Header START -->
 
-    <form name="form">
-        <!-- Form (TEXT) -->
-        <label for="username">Enter username:</label>
-        <input type="text" id="username" name="username">
-        <br>
-        <label for="email">Enter email:</label>
-        <input type="email" id="email" name="email">
-        <br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password">
+    <header>
+        <h1>Lagos Golf Course</h1>
+        <h2>The finest fairways on the south coast</h2>
+    </header>
 
-        <!-- Form (RADIO BUTTONS)
-            Eftersom type är radio och name är samma så kan man 
-            endast välja en av dem --> <br><br>
+    <!-- Header SLUT -->
 
-        <p>Select your age:</p>
-        <input type="radio" name="age" value="0-25" id="option-1">
-        <label for="option-1">0-25</label>
-        <input type="radio" name="age" value="26-50" id="option-2">
-        <label for="option-2">26-50</label>
-        <input type="radio" name="age" value="51+" id="option-3">
-        <label for="option-3">51+</label>
+    <!-- nav-bar START -->
 
-        <!-- Form (SELECT FIELDS + TEST-SVAR) --> <br><br>
-        <label for="question">Security questions:</label>
-        <select name="question" id="question">
-            <option value="q1">Favourite color?</option>
-            <option value="q2">Favourite food?</option>
-            <option value="q3">Favourite sport?</option>
-        </select>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="/index.html">Start</a></li>
+            <li><a href="book.html" class="book">Book a tee time</a></li>
+            <li><a href="/restaurant.html">Restaurant</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-        <br>
+    <!-- nav-bar SLUT -->
 
-        <label for="">Security question answer</label>
-        <input type="text" id="answer" name="answer">
-        <br><br>
+    <main>
+        <article>
+            <h2>Long traditions with a spice of progressive spirit!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptatem obcaecati aperiam,
+                harum
+                facere voluptate non fugiat, odit nihil, vitae accusantium itaque reiciendis a! Itaque tempore alias
+                exercitationem officia excepturi!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptatem obcaecati aperiam,
+                harum
+                facere voluptate non fugiat, odit nihil, vitae accusantium itaque reiciendis a! Itaque tempore alias
+                exercitationem officia excepturi!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptatem obcaecati aperiam,
+                harum
+                facere voluptate non fugiat, odit nihil, vitae accusantium itaque reiciendis a! Itaque tempore alias
+                exercitationem officia excepturi!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptatem obcaecati aperiam,
+                harum
+                facere voluptate non fugiat, odit nihil, vitae accusantium itaque reiciendis a! Itaque tempore alias
+                exercitationem officia excepturi!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptatem obcaecati aperiam,
+                harum
+                facere voluptate non fugiat, odit nihil, vitae accusantium itaque reiciendis a! Itaque tempore alias
+                exercitationem officia excepturi!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptatem obcaecati aperiam,
+                harum
+                facere voluptate non fugiat, odit nihil, vitae accusantium itaque reiciendis a! Itaque tempore alias
+                exercitationem officia excepturi!
+            </p>
+        </article>
 
-        <!-- Form (TEXTAREA) -->
-        <label for="bio">Your bio:</label><br>
-        <textarea name="bio" id="bio" cols="30" rows="10" placeholder="About you..."></textarea>
+        <ul class="images">
+            <li><img src="#" alt="#"></a></li>
+            <li><img src="#" alt="#"></a></li>
+        </ul>
+    </main>
 
-        <!-- Form (SUBMIT BUTTON) --> <br><br>
-
-        <input type="submit" name="submit" value="Submit the form">
-
-        <div id="message"></div>
-
-    </form>
-
-    <!-- FORMULÄR SLUT -->
+    <!-- FOOTER -->
+    <footer>
+        <p class="footer">Karl Gunnarsson | kyh-uppgift ip1 (2020)</p>
+    </footer>
 
     <!-- Länk till JS-fil -->
     <script src="script.js"></script>

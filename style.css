@@ -1,3 +1,9 @@
+/* Master CSS */
+
+* {
+    list-style: none;
+}
+
 /* Felmeddelande då 
 man försöker submitta formuläret 
 utan att skriva något
@@ -6,3 +12,4 @@ användarnamn)  */
     color: red;
     font-weight: bold;
 }
+
