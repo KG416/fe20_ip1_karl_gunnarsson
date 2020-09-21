@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="The official website of Lagos Golf Course, a golf course on the Nigerian south coast">
+    <title>Lagos Golf Course</title>
+
+    <!-- Länk till CSS-fil -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <!-- Header START -->
+    <header>
+        <h1>LAGOS GOLF COURSE</h1>
+    </header>
+
+    <div class="subHeader">
+        <h2>The finest fairways on the south coast</h2>
+    </div>
+    <!-- Header SLUT -->
+
+    <!-- nav-bar START -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="/index.html">Start</a></li>
+            <li><a href="book.html" class="book">Book a tee time</a></li>
+            <li><a href="/restaurant.html">Restaurant</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- nav-bar SLUT -->
+
+    <!-- FORM START -->
+    <h2>Fill out the forms below <br> to
+        book a tee time
+    </h2>
+
+    <form class="contact_form" action="#" method="post" name="contact_form">
+
+        <ul>
+            <li>
+                <span class="required_notification">* Required fields</span>
+            </li>
+            <!-- NAME -->
+            <li>
+                <label for="name">Name:</label> <br>
+                <input type="text" placeholder="John Doe" required />
+                <span class="form_hint">Proper format "John Johnson"</span>
+            </li>
+            <!-- EMAIL -->
+            <li>
+                <label for="email">Email:</label> <br>
+                <input type="email" name="email" placeholder="john_doe@example.com" required />
+                <span class="form_hint">Proper format "name@something.com"</span>
+            </li>
+            <!-- NR OF PLAYERS -->
+            <li>
+                <p>Number of players:</p>
+                <input type="radio" name="no-pl" value="1" id="option-1">
+                <label for="option-1">1</label> <br>
+                <input type="radio" name="no-pl" value="2" id="option-2">
+                <label for="option-2">2</label> <br>
+                <input type="radio" name="no-pl" value="3" id="option-3">
+                <label for="option-3">3</label> <br>
+                <input type="radio" name="no-pl" value="4" id="option-4">
+                <label for="option-4">4</label> <br>
+                <input type="radio" name="no-pl" value="5+" id="option-5">
+                <label for="option-5">5+</label>
+            </li>
+            <!-- DATE & TIME -->
+            <li>
+                <label type="teeoff-time">Desired tee off:</label> <br>
+                <input type="datetime-local" id="teeoff-time" name="teeoff-time" value="2020-09-12T19:30"
+                    min="2020-09-07T00:00" max="2021-12-14T00:00">
+                <span class="form_hint">Select desired date and time for tee off</span>
+            </li>
+            <!-- MESSAGE -->
+            <li>
+                <label for="message">Message:</label> <br>
+                <textarea name="message" cols="40" rows="6" required></textarea>
+                <span class="form_hint">eg: "One of our players is in a
+                    wheel chair"</span>
+            </li>
+            <!-- SUBMIT -->
+            <li>
+                <button class="submit" type="submit">Submit Form</button>
+            </li>
+        </ul>
+    </form>
+
+    <!-- FORM SLUT -->
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p class="footer">Karl Gunnarsson | kyh-uppgift ip1 (2020)</p>
+    </footer>
+
+    <!-- Länk till JS-fil -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

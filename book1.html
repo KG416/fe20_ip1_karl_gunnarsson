@@ -17,8 +17,11 @@
 
     <header>
         <h1>Lagos Golf Course</h1>
-        <h2>The finest fairways on the south coast</h2>
     </header>
+
+    <div class="subHeader">
+        <h2>The finest fairways on the south coast</h2>
+    </div>
 
     <!-- Header SLUT -->
 
@@ -26,10 +29,10 @@
 
     <nav class="main-nav">
         <ul>
-            <li><a href="/index.html">Start</a></li>
-            <li><a href="book.html" class="book">Book a tee time</a></li>
-            <li><a href="/restaurant.html">Restaurant</a></li>
-            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/index.html">START</a></li>
+            <li><a href="book1.html" class="book">BOOK A TEE TIME</a></li>
+            <li><a href="/restaurant.html">RESTAURANT</a></li>
+            <li><a href="/contact.html">CONTACT</a></li>
         </ul>
     </nav>
 
@@ -48,12 +51,11 @@
         https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/datetime-local
     -->
     <div class="form">
-
-        <h2>Fill out the forms below <br> to
-            book a tee time
-        </h2>
-
         <form name="form">
+            <h2>Fill out the forms below <br> to
+                book a tee time
+            </h2>
+            <span class="required_notification">* Required fields</span> <br><br><br>
             <!-- Form (TEXT) -->
             <label for="username">Name:</label> <br>
             <input type="text" id="username" name="username">
@@ -91,9 +93,9 @@
                 placeholder="Enter message here..."></textarea>
 
             <!-- Form (SUBMIT BUTTON) --> <br><br>
+            <button class="submit" type="submit" name="submit" value="Submit the form">Send request!</button>
 
-            <input type="submit" name="submit" value="Submit the form">
-
+            <!-- Error if name is not filled out -->
             <div id="message"></div>
 
         </form>

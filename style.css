@@ -6,38 +6,27 @@
 margin: 0px;
 }
 
-a {
-text-decoration: none;
-color: black;
-}
-
 a:visited{
 text-decoration: none;
-color: black;
+color: rgb(255, 255, 255);
 }
 
-
-/* Felmeddelande då 
-man försöker submitta formuläret 
-utan att skriva något
-användarnamn)  */
-#message {
-    color: red;
-    font-weight: bold;
-}
+/* MAIN CSS start */
 
 header {
     display: flex;
     justify-content: center;
-    color: white;
+    font-size: 20px;
+    /* color: rgb(255, 167, 72); */ 
+    color: rgb(96, 96, 96);
     background-color: black;
-    /* border-radius: 50px; */
+    /* background-image: linear-gradient(to left, #d8d4a6, #838383, #d8d4a6); */
     padding: 20px;
 }
 .subHeader {
     background-image: url("/img/skyWide.png");
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     height: 400px;
     font-size: 12px;
     /* border-radius: 50px; */
@@ -45,29 +34,42 @@ header {
 }
 
 .subHeader > h2 {
-    color: white;
-    display: flex;
-    flex-direction: column-reverse
-    
+    color: rgb(108, 108, 108);
+    align-items: flex-start;
+    /* flex-direction: column-reverse; */
+    /* background-color: black; */
+    font-style: italic;
 }
 
+h2 {
+    text-align: center;
+    padding: 50px;
+}
+
+/* NAV-CONTAINER */
 .main-nav > ul {
        display: flex;
        flex-direction: row;
        justify-content: space-around;
-       border-radius: 50px;
-       padding: 10px;
-       margin: 40px;
+       padding: 20px;
+       background-color: black;
        /* border: solid 5px black; */
 }
 
+/* NAV-KNAPPARNA */
 .main-nav > ul > li {
     font-size: 20px;
-    padding: 5px;
+    padding: 20px;
     margin: 5px;
-    border: solid 2px black;
-    border-radius: 50px;
+    background-image: linear-gradient(to left, #e4d852, rgb(255, 167, 72));
+    border-radius: 5px;
+}
 
+/* NAV-KNAPPS-TEXTEN */
+.main-nav > ul > li > a {
+    font-weight: bold;
+    color: rgb(96, 96, 96);
+    text-decoration: none;
 }
 
 .images {
@@ -79,9 +81,106 @@ article {
     margin: 20px;
 }
 
+address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactHead {
+    font-weight: bold;
+}
+
 footer {
-   margin: 20px; 
+   margin: 20px;
+   margin-top: 50px; 
    text-align: center;
+}
+/* MAIN CSS slut */
+
+/* book1 CSS start */
+
+.form form {
+    text-align: center;
+}
+
+.required_notification {
+	color:#d45252; 
+    margin:5px 0 0 0; 
+    padding: 15px;
+	display:inline;
+}
+
+.form form input { 
+	padding:5px 8px;
+	margin: 5px;
+}
+.form form textarea {
+	padding:8px;
+	margin: 5px; 
+	width:300px;
+}
+
+	/* form element visual styles */
+	.form form input, .form form textarea { 
+		border:1px solid #aaa;
+		box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+		border-radius:20px;
+		transition: padding .25s;
+	}
+	.form form input:focus, .form form textarea:focus {
+		background: #fff; 
+		border:1px solid #555; 
+        box-shadow: 0 0 3px #aaa; 
+        border-radius:20px;
+		padding-right:70px;
+	}
+
+/* UX images */
+.form form input:required, .form form textarea:required {
+	background: #fff url(img/book2/red_asterisk.png) no-repeat 98% center;
+}
+.form form input:required:valid, .contact_form textarea:required:valid {
+	background: #fff url(img/book2/valid.png) no-repeat 98% center;
+	box-shadow: 0 0 5px #5cd053;
+	border-color: #28921f;
+}
+.contact_form input:focus:invalid, .contact_form textarea:focus:invalid {
+	background: #fff url(img/book2/invalid.png) no-repeat 98% center;
+	box-shadow: 0 0 5px #d45252;
+	border-color: #b03535
+}
+
+button.submit {
+	background-color: #68b12f;
+	background: linear-gradient(top, #68b12f, #50911e);
+	border: 1px solid #509111;
+	border-bottom: 1px solid #5b992b;
+	box-shadow: inset 0 1px 0 0 #9fd574;
+	color: white;
+	font-weight: bold;
+    padding: 6px 20px;
+	text-shadow: 0 -1px 0 #396715;
+}
+button.submit:hover {
+	opacity:.85;
+	cursor: pointer; 
+}
+button.submit:active {
+	border: 1px solid #20911e;
+	box-shadow: 0 0 10px 5px #356b0b inset; 
+}
+
+/* book1 CSS slut */
+
+    /* Felmeddelande då 
+man försöker submitta formuläret 
+utan att skriva något
+användarnamn)  */
+#message {
+    color: red;
+    font-weight: bold;
 }
 
 @media(max-width:1000px){
@@ -89,12 +188,9 @@ footer {
         flex-direction: column;
         text-align: center;
     }
-
-    .main-nav > ul > li {
-        font-size: 30px;
+}
+    @media(max-width:510px){
+    header {
+        font-size: 70%;
     }
-
-    .images {
-display: flex;
-flex-direction: column;
-    }
+}
