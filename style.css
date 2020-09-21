@@ -3,7 +3,11 @@
 * {
     list-style: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-margin: 0px;
+    margin: 0px;
+}
+
+ul {
+    padding-inline-start: 0px;
 }
 
 a:visited{
@@ -42,6 +46,7 @@ header {
 }
 
 h2 {
+    color: rgb(96, 96, 96);
     text-align: center;
     padding: 50px;
 }
@@ -79,9 +84,12 @@ justify-content: space-around;
 
 article {
     margin: 20px;
+    margin-bottom: 50px;
+    color: rgb(96, 96, 96);
 }
 
 address {
+    color: rgb(96, 96, 96);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -93,23 +101,21 @@ address {
 }
 
 footer {
+   color: rgb(96, 96, 96);
    margin: 20px;
    margin-top: 50px; 
    text-align: center;
 }
 /* MAIN CSS slut */
 
+
+
+
+
 /* book1 CSS start */
 
 .form form {
     text-align: center;
-}
-
-.required_notification {
-	color:#d45252; 
-    margin:5px 0 0 0; 
-    padding: 15px;
-	display:inline;
 }
 
 .form form input { 
@@ -121,7 +127,6 @@ footer {
 	margin: 5px; 
 	width:300px;
 }
-
 	/* form element visual styles */
 	.form form input, .form form textarea { 
 		border:1px solid #aaa;
@@ -136,21 +141,6 @@ footer {
         border-radius:20px;
 		padding-right:70px;
 	}
-
-/* UX images */
-.form form input:required, .form form textarea:required {
-	background: #fff url(img/book2/red_asterisk.png) no-repeat 98% center;
-}
-.form form input:required:valid, .contact_form textarea:required:valid {
-	background: #fff url(img/book2/valid.png) no-repeat 98% center;
-	box-shadow: 0 0 5px #5cd053;
-	border-color: #28921f;
-}
-.contact_form input:focus:invalid, .contact_form textarea:focus:invalid {
-	background: #fff url(img/book2/invalid.png) no-repeat 98% center;
-	box-shadow: 0 0 5px #d45252;
-	border-color: #b03535
-}
 
 button.submit {
 	background-color: #68b12f;
@@ -171,8 +161,11 @@ button.submit:active {
 	border: 1px solid #20911e;
 	box-shadow: 0 0 10px 5px #356b0b inset; 
 }
-
 /* book1 CSS slut */
+
+
+
+
 
     /* Felmeddelande då 
 man försöker submitta formuläret 
