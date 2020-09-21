@@ -70,8 +70,31 @@ header {
 
 }
 
+.images {
+display: flex;
+justify-content: space-around;
+}
+
+article {
+    margin: 20px;
+}
+
+footer {
+   margin: 20px; 
+   text-align: center;
+}
+
 @media(max-width:1000px){
     .main-nav > ul{
         flex-direction: column;
         text-align: center;
+    }
+
+    .main-nav > ul > li {
+        font-size: 30px;
+    }
+
+    .images {
+display: flex;
+flex-direction: column;
     }
