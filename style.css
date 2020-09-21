@@ -2,7 +2,20 @@
 
 * {
     list-style: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+margin: 0px;
 }
+
+a {
+text-decoration: none;
+color: black;
+}
+
+a:visited{
+text-decoration: none;
+color: black;
+}
+
 
 /* Felmeddelande då 
 man försöker submitta formuläret 
@@ -13,3 +26,52 @@ användarnamn)  */
     font-weight: bold;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    /* border-radius: 50px; */
+    padding: 20px;
+}
+.subHeader {
+    background-image: url("/img/skyWide.png");
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    font-size: 12px;
+    /* border-radius: 50px; */
+    padding: 10px;
+}
+
+.subHeader > h2 {
+    color: white;
+    display: flex;
+    flex-direction: column-reverse
+    
+}
+
+.main-nav > ul {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+       border-radius: 50px;
+       padding: 10px;
+       margin: 40px;
+       /* border: solid 5px black; */
+}
+
+.main-nav > ul > li {
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px;
+    border: solid 2px black;
+    border-radius: 50px;
+
+}
+
+@media(max-width:1000px){
+    .main-nav > ul{
+        flex-direction: column;
+        text-align: center;
+    }
