@@ -5,3 +5,5 @@ TO DO:
 
 1. Gör bakgrundsbild responsiv
 2. Fixa den fula fyrkantiga skuggan på de rundade inputsen, formulär
+3. Ta bort expandering på datumet
+4. Vad gör padding inline start? Ta bort? (CSS)
