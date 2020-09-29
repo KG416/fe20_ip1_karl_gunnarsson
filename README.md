@@ -8,3 +8,4 @@ TO DO:
 3. Ta bort expandering på datumet
 5. Gör en RIMLIG animation ist för hack-slide:en
 7. Ful centrering på contact-sidan
+8. Konstig margin restaurant-bilder

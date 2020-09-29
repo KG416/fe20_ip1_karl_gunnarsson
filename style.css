@@ -103,6 +103,11 @@ article {
 .images {
 display: flex;
 justify-content: space-around;
+flex-wrap: wrap;
+}
+
+.images > img {
+margin: 2%;
 }
 
 .contactHeading {
@@ -190,9 +195,15 @@ button.submit:active {
         flex-direction: column;
         text-align: center;
     }
+    .images > img {
+    max-width: 90%;
 }
-    @media(max-width:510px){
+    
+@media(max-width:510px){
     header {
         font-size: 70%;
     }
+    .images > img {
+    max-width: 90%;
 }
+}}
