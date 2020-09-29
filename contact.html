@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="description"
@@ -8,7 +10,6 @@
 
     <!-- Länk till CSS-fil -->
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 
 <body>
@@ -29,34 +30,44 @@
 
     <nav class="main-nav">
         <ul>
-            <li><a href="/index.html">START</a></li>
+            <li><a href="index.html">START</a></li>
             <li><a href="book1.html" class="book">BOOK A TEE TIME</a></li>
-            <li><a href="/restaurant.html">RESTAURANT</a></li>
-            <li><a href="/contact.html">CONTACT</a></li>
+            <li><a href="restaurant.html">RESTAURANT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
         </ul>
     </nav>
 
     <!-- nav-bar SLUT -->
+    <section class="contact">
 
-
-    <address>
         <h2>Contact us!</h2>
-        <ul class="contact">
-            <li> <span class="contactHead">Address:</span> <br>
-                Main street 124 <br>
-                Lagos 123 45 <br>
-                Nigeria
-            </li>
-            <br>
-            <li><span class="contactHead">Email:</span> <br> mail@mailcockadoodledoo.se</li>
-            <br>
-            <li><span class="contactHead">Phone:</span> <br> 070 123 45 67 <br> </li>
+
+        <ul class="address">
+            <li> <span class="contactHeading">Address:</span>
+            <li>Main street 124</li>
+            <li>Lagos 123 45</li>
+            <li>Nigeria</li>
         </ul>
-    </address>
+        <br>
+        <ul class="email">
+            <li><span class="contactHeading">Email:</span></li>
+            <li>mail@mailcockadoodledoo.se</li>
+        </ul>
+        <br>
+        <ul class="phone">
+            <li><span class="contactHeading">Phone:</span></li>
+            <li>070 123 45 67</li>
+        </ul>
+
+    </section>
 
     <!-- FOOTER -->
     <footer>
         <p class="footer">Karl Gunnarsson | kyh-uppgift ip1 (2020)</p>
     </footer>
 
+    <!-- JS link -->
+    <script src="script.js"></script>
 </body>
+
+</html>

@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="description"
         content="The official website of Lagos Golf Course, a golf course on the African west coast">
     <title>Lagos Golf Course</title>
 
-    <!-- Länk till CSS-fil -->
+    <!-- CSS link -->
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 
 <body>
 
-    <!-- Header START -->
+    <!-- HEADER -->
 
     <header>
         <h1>Lagos Golf Course</h1>
@@ -23,22 +24,18 @@
         <h2>"The finest fairways on the south coast"</h2>
     </div>
 
-    <!-- Header SLUT -->
-
-    <!-- nav-bar START -->
+    <!-- NAV-BAR -->
 
     <nav class="main-nav">
         <ul>
-            <li><a href="/index.html">START</a></li>
+            <li><a href="index.html">START</a></li>
             <li><a href="book1.html" class="book">BOOK A TEE TIME</a></li>
-            <li><a href="/restaurant.html">RESTAURANT</a></li>
-            <li><a href="/contact.html">CONTACT</a></li>
+            <li><a href="restaurant.html">RESTAURANT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
         </ul>
     </nav>
 
-    <!-- nav-bar SLUT -->
-
-    <!-- FORMULÄR START -->
+    <!-- FORM START -->
 
     <!-- Källor: 
         1. Net Ninja HTML Forms (HTML)
@@ -56,17 +53,14 @@
                 book a tee time
             </h2>
 
-            <!-- Form (TEXT) -->
+            <!-- Form (NAME + EMAIL) -->
             <label for="username">Name:</label> <br>
             <input type="text" id="username" name="username">
             <br><br>
             <label for="email">Your email:</label> <br>
             <input type="email" id="email" name="email">
 
-            <!-- Form (RADIO BUTTONS)
-            Eftersom type är radio och name är samma så kan man 
-            endast välja en av dem --> <br><br>
-
+            <!-- Form (RADIO BUTTONS) --> <br><br>
             <p>Number of players:</p>
             <input type="radio" name="no-pl" value="1" id="option-1">
             <label for="option-1">1</label>
@@ -78,11 +72,10 @@
             <label for="option-4">4</label>
             <input type="radio" name="no-pl" value="5+" id="option-5">
             <label for="option-5">5+</label>
-
             <br><br><br>
 
-            <!-- Date and time -->
-            <label type="teeoff-time">Desired tee off:</label> <br>
+            <!-- Form (DATE AND TIME) -->
+            <label>Desired tee off:</label> <br>
             <input type="datetime-local" id="teeoff-time" name="teeoff-time" value="2020-09-12T19:30"
                 min="2020-09-07T00:00" max="2021-12-14T00:00">
             <br><br><br>
@@ -94,21 +87,20 @@
             <!-- Form (SUBMIT BUTTON) --> <br><br>
             <button class="submit" type="submit" name="submit" value="Submit the form">Send request!</button>
 
-            <!-- Error if name is not filled out -->
+            <!-- Form (Error message if name or email is not filled out) -->
             <div id="message"></div>
 
         </form>
     </div>
-    <!-- FORMULÄR SLUT -->
-
-    <!-- Länk till JS-fil -->
-    <script src="script.js"></script>
+    <!-- FORM END -->
 
     <!-- FOOTER -->
     <footer>
         <p class="footer">Karl Gunnarsson | kyh-uppgift ip1 (2020)</p>
     </footer>
 
+    <!-- JS link -->
+    <script src="script.js"></script>
 </body>
 
 </html>

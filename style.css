@@ -6,11 +6,7 @@
     margin: 0px;
 }
 
-ul {
-    padding-inline-start: 0px;
-}
-
-a:visited{
+a:visited {
 text-decoration: none;
 color: rgb(255, 255, 255);
 }
@@ -23,16 +19,13 @@ header {
     font-size: 20px;
     color: rgb(255, 255, 255);
     background-color: black;
-    /* background-image: linear-gradient(to left, #d8d4a6, #838383, #d8d4a6); */
     padding: 20px;
 }
 .subHeader {
     background-image: url("/img/skyWide.png");
     display: flex;
-    /* justify-content: center; */
     height: 400px;
     font-size: 12px;
-    /* border-radius: 50px; */
     padding: 10px;
 }
 
@@ -40,28 +33,25 @@ header {
     color: rgb(255, 255, 255);
     align-items: flex-start;
     text-shadow: 1px 1px 0px rgb(0, 0, 0);
-    /* flex-direction: column-reverse; */
-    /* background-color: black; */
     font-style: italic;
 }
 
 h2 {
     color: rgb(0, 0, 0);
-    text-align: center;
     padding: 50px;
+    text-align: center;
 }
 
-/* NAV-CONTAINER */
+/* NAV CONTAINER */
 .main-nav > ul {
        display: flex;
        flex-direction: row;
        justify-content: space-around;
        padding: 20px;
        background-color: black;
-       /* border: solid 5px black; */
 }
 
-/* NAV-KNAPPARNA */
+/* NAV BUTTONS */
 .main-nav > ul > li {
     font-size: 20px;
     padding: 20px;
@@ -70,21 +60,38 @@ h2 {
     border-radius: 5px;
 }
 
-/* NAV-KNAPPS-HOVER */
+/* NAV BUTTON HOVER */
 .main-nav > ul > li:hover {
 box-shadow: 0 5px 15px rgb(255, 255, 255) inset;
 }
 
-/* NAV-KNAPPS-TEXTEN */
+/* NAV BUTTON TEXT */
 .main-nav > ul > li > a {
     font-weight: bold;
     color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
-.images {
-display: flex;
-justify-content: space-around;
+.slide-in {
+    animation-duration: 3s;
+    animation-name: slidein;
+    }
+
+    @keyframes slidein {
+    from {
+    margin-left: 100%;
+    width: 100%;
+    }
+
+    to {
+    margin-left: 0%;
+    width: 100%;
+    }
+    }
+
+.contact {
+text-align: center;
+color: rgb(96, 96, 96);
 }
 
 article {
@@ -93,15 +100,12 @@ article {
     color: rgb(96, 96, 96);
 }
 
-address {
-    color: rgb(96, 96, 96);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.images {
+display: flex;
+justify-content: space-around;
 }
 
-.contactHead {
+.contactHeading {
     font-weight: bold;
 }
 
@@ -111,16 +115,19 @@ footer {
    margin-top: 50px; 
    text-align: center;
 }
-/* MAIN CSS slut */
+/* MAIN CSS end */
 
 
 
 
+/* book1 start */
 
-/* book1 CSS start */
+ /* Källa: Styling/design */
+ /* Länk: https://webdesign.tutsplus.com/tutorials/bring-your-forms-up-to-date-with-css3-and-html5-validation--webdesign-4738 */
 
 .form form {
     text-align: center;
+    color: rgb(96, 96, 96);
 }
 
 .form form input { 
@@ -172,10 +179,7 @@ button.submit:active {
 
 
 
-    /* Felmeddelande då 
-man försöker submitta formuläret 
-utan att skriva något
-användarnamn)  */
+    /* Felmeddelande, submittar utan namn)  */
 #message {
     color: red;
     font-weight: bold;
