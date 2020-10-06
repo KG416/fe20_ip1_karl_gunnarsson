@@ -17,7 +17,9 @@
     <!-- HEADER -->
 
     <header>
-        <h1>Lagos Golf Course</h1>
+        <a href="index.html">
+            <h1>Lagos Golf Club</h1>
+        </a>
     </header>
 
     <div class="subHeader">
@@ -47,51 +49,49 @@
         3. MDN web docs
         https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/datetime-local
     -->
-    <div class="form">
-        <form name="form">
-            <h2 class="artHead">Fill out the forms below <br> to
-                book a tee time
-            </h2>
 
-            <!-- Form (NAME + EMAIL) -->
-            <label for="username">Name:</label> <br>
-            <input type="text" id="username" name="username">
-            <br><br>
-            <label for="email">Your email:</label> <br>
-            <input type="email" id="email" name="email">
+    <form name="form">
+        <h2 class="artHead">Fill out the forms below <br> to
+            book a tee time
+        </h2>
 
-            <!-- Form (RADIO BUTTONS) --> <br><br>
-            <p>Number of players:</p>
-            <input type="radio" name="no-pl" value="1" id="option-1">
-            <label for="option-1">1</label>
-            <input type="radio" name="no-pl" value="2" id="option-2">
-            <label for="option-2">2</label>
-            <input type="radio" name="no-pl" value="3" id="option-3">
-            <label for="option-3">3</label>
-            <input type="radio" name="no-pl" value="4" id="option-4">
-            <label for="option-4">4</label>
-            <input type="radio" name="no-pl" value="5+" id="option-5">
-            <label for="option-5">5+</label>
-            <br><br><br>
+        <!-- Form (NAME + EMAIL) -->
+        <label for="username">Name:</label> <br>
+        <input type="text" id="username" name="username">
+        <br><br>
+        <label for="email">Your email:</label> <br>
+        <input type="email" id="email" name="email">
 
-            <!-- Form (DATE AND TIME) -->
-            <label>Desired tee off:</label> <br>
-            <input type="datetime-local" id="teeoff-time" name="teeoff-time" value="2020-09-12T19:30"
-                min="2020-09-07T00:00" max="2021-12-14T00:00">
-            <br><br><br>
-            <!-- Form (Additional message, TEXTAREA) -->
-            <label for="add-message">Additional message:</label><br>
-            <textarea name="add-message" id="add-message" cols="30" rows="10"
-                placeholder="Enter message here..."></textarea>
+        <!-- Form (RADIO BUTTONS) --> <br><br>
+        <p>Number of players:</p>
+        <input type="radio" name="no-pl" value="1" id="option-1">
+        <label for="option-1">1</label>
+        <input type="radio" name="no-pl" value="2" id="option-2">
+        <label for="option-2">2</label>
+        <input type="radio" name="no-pl" value="3" id="option-3">
+        <label for="option-3">3</label>
+        <input type="radio" name="no-pl" value="4" id="option-4">
+        <label for="option-4">4</label>
+        <input type="radio" name="no-pl" value="5+" id="option-5">
+        <label for="option-5">5+</label>
+        <br><br><br>
 
-            <!-- Form (SUBMIT BUTTON) --> <br><br>
-            <button class="submit" type="submit" name="submit" value="Submit the form">Send request!</button>
+        <!-- Form (DATE AND TIME) -->
+        <label>Desired tee off:</label> <br>
+        <input type="datetime-local" id="teeoff-time" name="teeoff-time" value="2020-09-12T19:30" min="2020-09-07T00:00"
+            max="2021-12-14T00:00">
+        <br><br><br>
+        <!-- Form (Additional message, TEXTAREA) -->
+        <label for="add-message">Additional message:</label><br>
+        <textarea name="add-message" id="add-message" cols="30" rows="10"
+            placeholder="Enter message here..."></textarea>
 
-            <!-- Form (Error message if name or email is not filled out) -->
-            <div id="message"></div>
+        <!-- Form (SUBMIT BUTTON) --> <br><br>
+        <button class="submit" type="submit" name="submit" value="Submit the form">Send request!</button>
 
-        </form>
-    </div>
+        <!-- Form (Error message if name or email is not filled out) -->
+        <div id="message"></div>
+    </form>
     <!-- FORM END -->
 
     <!-- FOOTER -->

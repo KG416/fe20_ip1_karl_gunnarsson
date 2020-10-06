@@ -10,3 +10,5 @@ TO DO:
 7. Ful centrering på contact-sidan
 8. Konstig margin restaurant-bilder
 9. Ful grå border på videon, förstasidan
+10. Fixa validering på spelare och datum (JS)
+11. Allt verkar sjukt litet i mobil-läge (media q)
