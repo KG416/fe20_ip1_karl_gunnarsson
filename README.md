@@ -9,3 +9,4 @@ TO DO:
 5. Gör en RIMLIG animation ist för hack-slide:en
 7. Ful centrering på contact-sidan
 8. Konstig margin restaurant-bilder
+9. Ful grå border på videon, förstasidan

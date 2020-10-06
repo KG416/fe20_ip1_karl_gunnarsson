@@ -42,8 +42,28 @@ h2 {
     text-align: center;
 }
 
+/* BOUNCE IN ANIMATION */
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.artHead {
+  animation-duration: 1s;
+  animation-name: bounceIn;
+}
+
 /* NAV CONTAINER */
-.main-nav > ul {
+nav > ul {
        display: flex;
        flex-direction: row;
        justify-content: space-around;
@@ -52,45 +72,35 @@ h2 {
 }
 
 /* NAV BUTTONS */
-.main-nav > ul > li {
+nav > ul > li {
     font-size: 20px;
-    padding: 20px;
+    padding: 0px;
     margin: 5px;
     background-image: linear-gradient(to left, #e4d852, rgb(255, 167, 72));
     border-radius: 5px;
 }
 
-/* NAV BUTTON HOVER */
-.main-nav > ul > li:hover {
-box-shadow: 0 5px 15px rgb(255, 255, 255) inset;
-}
-
 /* NAV BUTTON TEXT */
-.main-nav > ul > li > a {
-    font-weight: bold;
-    color: rgb(0, 0, 0);
+nav > ul > li > a {
+    /* font-weight: bold; */
     text-decoration: none;
+    display: inline-block; 
+    text-align: center;
+     line-height: 52px;
+    height: 50px;
+    width: 200px;
 }
 
-.slide-in {
-    animation-duration: 3s;
-    animation-name: slidein;
-    }
+/* NAV BUTTON HOVER */
+nav > ul > li:hover
+{
+    background:#d09132;      
+}
 
-    @keyframes slidein {
-    from {
-    margin-left: 100%;
-    width: 100%;
-    }
-
-    to {
-    margin-left: 0%;
-    width: 100%;
-    }
-    }
-
-.contact {
-text-align: center;
+.contact, .contact > ul > li  {
+display: flex;
+flex-direction: column;
+align-items: center;
 color: rgb(96, 96, 96);
 }
 
@@ -100,13 +110,13 @@ article {
     color: rgb(96, 96, 96);
 }
 
-.images {
+.imgVid {
 display: flex;
 justify-content: space-around;
 flex-wrap: wrap;
 }
 
-.images > img {
+.imgVid > img, video {
 margin: 2%;
 }
 
@@ -125,10 +135,10 @@ footer {
 
 
 
-/* book1 start */
+/* BOOK A TEE TIME start */
 
- /* Källa: Styling/design */
- /* Länk: https://webdesign.tutsplus.com/tutorials/bring-your-forms-up-to-date-with-css3-and-html5-validation--webdesign-4738 */
+ /* Styling/design */
+ /* Source URL: https://webdesign.tutsplus.com/tutorials/bring-your-forms-up-to-date-with-css3-and-html5-validation--webdesign-4738 */
 
 .form form {
     text-align: center;
@@ -144,7 +154,7 @@ footer {
 	margin: 5px; 
 	width:300px;
 }
-	/* Inputfält (skugga + expandering) */
+	/* Input fields (shadow + expand) */
 	.form form input, .form form textarea { 
 		border:1px solid #aaa;
 		box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
@@ -178,24 +188,22 @@ button.submit:active {
 	border: 1px solid #20911e;
 	box-shadow: 0 0 10px 5px #356b0b inset; 
 }
-/* book1 CSS slut */
-
-
-
-
-
-    /* Felmeddelande, submittar utan namn)  */
+    /* Error message, sbmit without name or email)  */
 #message {
     color: red;
     font-weight: bold;
-}
+    }
+/* BOOK A TEE TIME end */
+
+/* MEDIA QUERIES */
+
 
 @media(max-width:1000px){
-    .main-nav > ul{
+    nav > ul{
         flex-direction: column;
         text-align: center;
     }
-    .images > img {
+    .imgVid > img {
     max-width: 90%;
 }
     
@@ -203,7 +211,7 @@ button.submit:active {
     header {
         font-size: 70%;
     }
-    .images > img {
+    .imgVid > img {
     max-width: 90%;
 }
 }}
