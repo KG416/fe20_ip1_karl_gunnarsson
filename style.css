@@ -4,6 +4,7 @@
     list-style: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0px;
+    padding: 0;
 }
 
 a {
@@ -13,6 +14,10 @@ a {
 a:visited {
 text-decoration: none;
 color: rgb(255, 255, 255);
+}
+
+html, body {
+    overflow-x:hidden;
 }
 
 /* MAIN CSS start */
@@ -27,6 +32,10 @@ header {
 }
 .subHeader {
     background-image: url("/img/skyWide.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
     display: flex;
     height: 400px;
     font-size: 12px;
@@ -145,6 +154,7 @@ footer {
  /* Styling/design */
  /* Source URL: https://webdesign.tutsplus.com/tutorials/bring-your-forms-up-to-date-with-css3-and-html5-validation--webdesign-4738 */
 
+
 form {
     text-align: center;
     color: rgb(96, 96, 96);
@@ -167,12 +177,16 @@ form textarea {
 		transition: padding .25s;
 	}
 	form input:focus, form textarea:focus {
+        outline: none;
 		background: #fff; 
 		border:1px solid #555; 
         box-shadow: 0 0 3px #aaa; 
         border-radius:20px;
 		padding-right:70px;
-	}
+    }
+    form input[type="datetime-local"]:focus {
+        padding-right: 8px;
+    }
 
 button.submit {
 	background-color: #68b12f;
@@ -216,7 +230,19 @@ button.submit:active {
     header {
         font-size: 70%;
     }
-    .imgVid > img {
+    nav > ul > li > a {
+    padding: 20px;
+    }
+    .artHead {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+    .imgVid > * {
     max-width: 90%;
-}
+    }
+    article {
+        margin: 30px;
+    }
 }}

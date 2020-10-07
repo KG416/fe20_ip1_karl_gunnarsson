@@ -11,10 +11,10 @@ var message = document.getElementById("message");
 form.onsubmit = function () {
 
     if (form.username.value == "") {
-        message.innerHTML = "Please enter a name before you submit";
+        message.innerHTML = "Please enter a name before you send request";
         return false;
     } else if (form.email.value == "") {
-        message.innerHTML = "Please enter your email before you submit";
+        message.innerHTML = "Please enter your email before send request";
         return false;
     }
     else {
