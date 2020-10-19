@@ -1,4 +1,4 @@
-/* Master CSS */
+/* ---------------MASTER CSS--------------- */
 
 * {
     list-style: none;
@@ -6,22 +6,21 @@
     margin: 0px;
     padding: 0;
 }
-
 a {
-      text-decoration: none;
+    text-decoration: none;
 }
-
 a:visited {
-text-decoration: none;
-color: rgb(255, 255, 255);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
 }
-
 html, body {
     overflow-x:hidden;
 }
+:root {
+    --main-text-color: rgb(96, 96, 96);
+}
 
-/* MAIN CSS start */
-
+/* ---------------HEADERS--------------- */
 header {
     display: flex;
     justify-content: center;
@@ -41,21 +40,22 @@ header {
     font-size: 12px;
     padding: 10px;
 }
-
 .subHeader > h2 {
     color: rgb(255, 255, 255);
     align-items: flex-start;
     text-shadow: 1px 1px 0px rgb(0, 0, 0);
     font-style: italic;
 }
-
 h2 {
     color: rgb(0, 0, 0);
     padding: 50px;
     text-align: center;
 }
 
-/* BOUNCE IN ANIMATION */
+/* BOUNCE IN ANIMATION 
+Source:
+https://thoughtbot.com/blog/css-animation-for-beginners
+*/
 @keyframes bounceIn {
   0% {
     transform: scale(0.1);
@@ -69,19 +69,20 @@ h2 {
     transform: scale(1);
   }
 }
-
 .artHead {
-  animation-duration: 1s;
-  animation-name: bounceIn;
+    animation-duration: 1s;
+    animation-name: bounceIn;
 }
+
+/* ---------------NAV BAR--------------- */
 
 /* NAV CONTAINER */
 nav > ul {
-       display: flex;
-       flex-direction: row;
-       justify-content: space-around;
-       padding: 20px;
-       background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: black;
 }
 
 /* NAV BUTTONS */
@@ -95,10 +96,9 @@ nav > ul > li {
 
 /* NAV BUTTON TEXT */
 nav > ul > li > a {
-    /* font-weight: bold; */
     display: inline-block; 
     text-align: center;
-     line-height: 52px;
+    line-height: 52px;
     height: 50px;
     width: 200px;
 }
@@ -108,52 +108,48 @@ nav > ul > li:hover
 {
     background:#d09132;      
 }
-
-.contact, .contact > ul > li  {
-display: flex;
-flex-direction: column;
-align-items: center;
-color: rgb(96, 96, 96);
-}
-
+/* ---------------ARTICLES, IMAGES and VIDEOS--------------- */
 article {
     margin: 20px;
     margin-bottom: 50px;
-    color: rgb(96, 96, 96);
-    margin-left: 25%;
-    margin-right: 25%;
+    color: var(--main-text-color);
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 .imgVid {
-display: flex;
-justify-content: space-around;
-flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .imgVid > img, video {
-margin: 2%;
+    margin: 2%;
 }
+/* ---------------CONTACT + FOOTER--------------- */
 
 .contactHeading {
     font-weight: bold;
 }
 
-footer {
-   color: rgb(96, 96, 96);
-   margin: 20px;
-   margin-top: 50px; 
-   text-align: center;
+.contact, .contact > ul > li  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--main-text-color);
 }
-/* MAIN CSS end */
+footer {
+    color: var(--main-text-color);
+    margin: 20px;
+    margin-top: 50px; 
+    text-align: center;
+}
 
+/* ---------------BOOK A TEE TIME start--------------- */
 
-
-
-/* BOOK A TEE TIME start */
-
- /* Styling/design */
- /* Source URL: https://webdesign.tutsplus.com/tutorials/bring-your-forms-up-to-date-with-css3-and-html5-validation--webdesign-4738 */
-
+ /* Styling/design source: 
+ https://webdesign.tutsplus.com/tutorials/bring-your-forms-up-to-date-with-css3-and-html5-validation--webdesign-4738 
+ */
 
 form {
     text-align: center;
@@ -169,28 +165,29 @@ form textarea {
 	margin: 5px; 
 	width:300px;
 }
-	/* Input fields (shadow + expand) */
-	form input, form textarea { 
-		border:1px solid #aaa;
-		box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
-		border-radius:20px;
-		transition: padding .25s;
+/* Input fields (shadow + expand) */
+form input, form textarea { 
+	border:1px solid #aaa;
+	box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+	border-radius:20px;
+	transition: padding .25s;
 	}
-	form input:focus, form textarea:focus {
-        outline: none;
-		background: #fff; 
-		border:1px solid #555; 
-        box-shadow: 0 0 3px #aaa; 
-        border-radius:20px;
-		padding-right:70px;
+form input:focus, form textarea:focus {
+    outline: none;
+	background: #fff; 
+	border:1px solid #555; 
+    box-shadow: 0 0 3px #aaa; 
+    border-radius:20px;
+	padding-right:70px;
     }
-    form input[type="datetime-local"]:focus {
-        padding-right: 8px;
+form input[type="datetime-local"]:focus {
+    padding-right: 8px;
     }
 
+	/* Submit button */
 button.submit {
 	background-color: #68b12f;
-	background: linear-gradient(top, #68b12f, #50911e);
+	background: linear-gradient(to top, #68b12f, #50911e);
 	border: 1px solid #509111;
 	border-bottom: 1px solid #5b992b;
 	box-shadow: inset 0 1px 0 0 #9fd574;
@@ -207,14 +204,16 @@ button.submit:active {
 	border: 1px solid #20911e;
 	box-shadow: 0 0 10px 5px #356b0b inset; 
 }
-    /* Error message, sbmit without name or email)  */
+    /* Error msg, if user tries to submit without name or email  */
 #message {
     color: red;
     font-weight: bold;
     }
-/* BOOK A TEE TIME end */
+/* ---------------BOOK A TEE TIME end--------------- */
 
-/* MEDIA QUERIES */
+
+
+/* ---------------MEDIA QUERIES--------------- */
 
 
 @media(max-width:1000px){
@@ -223,7 +222,7 @@ button.submit:active {
         text-align: center;
     }
     .imgVid > img {
-    max-width: 90%;
+        max-width: 90%;
 }
     
 @media(max-width:510px){
@@ -231,7 +230,7 @@ button.submit:active {
         font-size: 70%;
     }
     nav > ul > li > a {
-    padding: 20px;
+        padding: 20px;
     }
     .artHead {
         padding-left: 0px;
@@ -240,7 +239,7 @@ button.submit:active {
         padding-top: 30px;
     }
     .imgVid > * {
-    max-width: 90%;
+        max-width: 90%;
     }
     article {
         margin: 30px;
