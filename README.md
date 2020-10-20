@@ -2,12 +2,10 @@
 kyh-uppgift: Individuella 1
 
 TO DO:
-1. Gör allt lite större för mobil
 
-2. Cannot set property 'onsubmit' of undefined
-    at script.js:11 (visas i console för alla sidor utom book1 ?????)
-    
 ----------EXTRA STUFF----------
+
+2. Gör allt lite större för mobil
 
 3. Starta video när man kommer ner till den via scroll
 document.getElementById('vid').play();
