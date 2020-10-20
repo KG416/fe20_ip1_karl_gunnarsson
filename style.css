@@ -224,6 +224,9 @@ button.submit:active {
         text-align: center;
         padding: 5px;
     }
+    nav > ul > li > a {
+        padding: 7px;
+    }
     .imgVid > * {
         max-width: 90%;
 }
