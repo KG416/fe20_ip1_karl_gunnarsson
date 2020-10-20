@@ -126,6 +126,7 @@ article {
 
 .imgVid > img, video {
     margin: 2%;
+    border-radius: 7px;
 }
 /* ---------------CONTACT + FOOTER--------------- */
 
@@ -223,7 +224,7 @@ button.submit:active {
         text-align: center;
         padding: 5px;
     }
-    .imgVid > img {
+    .imgVid > * {
         max-width: 90%;
 }
     
@@ -240,7 +241,10 @@ button.submit:active {
         padding-bottom: 30px;
         padding-top: 30px;
     }
-    .imgVid > * {
+    .imgVid > img {
+        height: 37vh;
+    }
+    .imgVid > video {
         max-width: 90%;
     }
     article {
