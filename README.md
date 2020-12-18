@@ -1,3 +1,4 @@
+<center>
 
 ![Lagos Golf Club logo](img/gold-logo-v1.3.png)
 
@@ -13,10 +14,12 @@ This was my first school assignment during my studies at **kyh** in Stockholm. I
 
 ### Screenshots
 
-![Screenshot of Lagos Golf Club 1](img/lagosScreen-start.png)
+![Screenshot of Lagos Golf Club 1](img/lagosScreen-book.png)
 
-![Screenshot of Lagos Golf Club 2](img/lagosScreen-book.png)
+![Screenshot of Lagos Golf Club 2](img/lagosScreen-restaurant.png)
 
 ##### Assignment name (only relevant for **kyh** staff and students)
 
 fe20_ip1_karl_gunnarsson
+
+<center/>
